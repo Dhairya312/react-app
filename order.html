@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web design">
+    <meta name="author" content="Dhairya Bhavsar">
+    <meta name="keyword" content="food ordering tp cafe.">
+
+    <title>My Orders</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+<body>
+<!--Header Section start-->
+<header class="d_tp_header">
+    <div class="d_tp_sub_header">
+        <a href="#" class="logo"><i class="fas fa-utensils"></i> Dhairya</a>
+
+        <form class="search-form">
+            <input type="text" placeholder="search here...." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart" title="Order Cart"></div>
+            <div id="notification-btn" class="fas fa-bell" title="Notification"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+        </div>
+    </div>
+
+    <div class="d_tp_mobile_header">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="order.html">My Order</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact US</a>
+            <a href="#">Terms & Conditions</a>
+        </nav>
+    </div>
+
+    <!--shopping Cart List start-->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="assets/images/cart-1.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">&#x20B9;18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="assets/images/cart-2.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">&#x20B9;18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="assets/images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">&#x20B9;18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="assets/images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">&#x20B9;18.99</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="assets/images/cart-3.jpg" alt="">
+            <div class="content">
+                <h3>organic food</h3>
+                <span class="quantity">1</span>
+                <span class="multiply">x</span>
+                <span class="price">&#x20B9;18.99</span>
+            </div>
+        </div>
+        <h3 class="total"> total : <span>56.97</span> </h3>
+        <a href="#" class="btn">checkout cart</a>
+    </div>
+    <!--shopping cart list end-->
+
+    <!--Notification List Box start-->
+    <div class="notification">
+        <div class="notification-box">
+            <p>
+                New Order from the user_312
+            </p>
+            <p>
+                Order completed from the user_3
+            </p>
+            <p>
+                Order rejected
+            </p>
+        </div>
+    </div>
+    <!--Notification list box end-->
+</header>
+<!--Header Section end-->
+
+<!--Bottom Nav b-ar start-->
+<nav class="d_tp_mobile_sub_header">
+    <a href="index.html" class="fas fa-home" title="home"></a>
+    <a href="order.html" class="fas fa-clipboard-list" title="my order"></a>
+    <!--    <a href="#" class="fas fa-info" title="about-us"></a>-->
+    <!--    <a href="#" class="fas fa-phone" title="contact-us"></a>-->
+    <a href="#" id="cart-mobile-btn" class="fas fa-shopping-cart" title="Order Cart"></a>
+    <a href="#" id="mobile-notification-btn" class="fas fa-bell" title="Notification"></a>
+    <a href="#" id="mobile-login-btn" class="fas fa-user"></a>
+</nav>
+<!--Bottom nav bar end-->
+
+<!-- Login form  start-->
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div>
+    <div class="non-valid">
+        <form >
+            <h3>sign in</h3>
+            <label for="mobileNumber">Mobile Number</label>
+            <input type="text" required name="mobileNumber" class="box" placeholder="Enter Mobile Number" id="mobileNumber">
+
+            <input type="button" value="Validate" id="otp-send" class="btn">
+        </form>
+    </div>
+    <div class="valid hide">
+        <form action="">
+            <h3>Verification</h3>
+            <span>Your verification code is sent on +91 7405183836</span>
+            <span>Enter the code in <span class="counter">0:30 sec</span></span>
+            <div class="otp-input">
+                <input type="text" class="box" required>
+                <input type="text" class="box" required>
+                <input type="text" class="box" required>
+                <input type="text" class="box" required>
+                <input type="text" class="box" required>
+                <input type="text" class="box" required>
+            </div>
+
+            <input type="submit" value="Verify" class="btn">
+            <small>Didn't Receive The Verification OTP? <a href="#">Resend Again</a></small>
+        </form>
+    </div>
+</div>
+<!-- Login form  end-->
+
+<!--my order section start-->
+<section class="my-order">
+    <h1 class="title"> Past <span>Orders</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-1.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-7.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 
+                        12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-2.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 
+                        12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-4.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 
+                        12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-3.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 
+                        12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="assets/images/menu-2.jpg" alt="order">
+            </div>
+            <div class="content">
+                <div class="icons">
+                    <a href="#"> #740424 </a>
+                    <a href="#">
+                        <i class="fas fa-calendar"></i>
+                        21st may, 2021 
+                        12:29:37 PM
+                    </a>
+                </div>
+                <p>Store Name: Ahmedabad</p>
+                <p>Order Status: Picked up</p>
+                <a href="#" class="btn">View Order</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--my order section end-->
+
+<!--Footer section start-->
+<section class="d_tp_footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+        </div>
+
+        <div class="box payment-methods">
+            <h3>Payments Methods</h3>
+            <a href="#"> <img src="assets/images/google-pay.png" alt="gpay"></a>
+            <a href="#"> <img src="assets/images/paytm.png" alt="paytm"></a>
+            <a href="#"> <img src="assets/images/visa.png" alt="visa"></a>
+            <a href="#"> <img src="assets/images/master-card.png" alt="master-card"></a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+    </div>
+
+    <div class="credit"> Copyrights all rights reserved </div>
+</section>
+<!--Footer section end-->
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

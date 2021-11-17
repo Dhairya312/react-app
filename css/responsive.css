@@ -1,0 +1,109 @@
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .d_tp_header .d_tp_sub_header{
+        padding: 2rem;
+    }
+    section{
+        padding: 3rem 2rem;
+    }
+    .d_tp_footer .share{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:768px) {
+    html {
+        scroll-padding-top: 0;
+    }
+
+    body {
+        padding-bottom: 6rem;
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar.active {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        background-color: #27ae60;
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: #27ae60;
+        font-size: 2rem;
+        display: block;
+        border-radius: .5rem;
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar a:nth-child(1) {
+        display: none;
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar a:nth-child(2) {
+        display: none;
+    }
+
+    .d_tp_header .d_tp_mobile_header .navbar a:last-child {
+        display: block;
+    }
+
+    .d_tp_mobile_sub_header {
+        display: block;
+    }
+
+    #search-btn {
+        display: inline-block;
+    }
+
+    .d_tp_header .d_tp_sub_header {
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+
+    .d_tp_header .d_tp_sub_header .search-form {
+        position:absolute;
+        top:-115%; right:2rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+
+    .d_tp_header .d_tp_sub_header .search-form.active {
+        top:115%;
+    }
+
+    .d_tp_header > .d_tp_sub_header > .icons > div:nth-child(n+3) {
+        display: none;
+    }
+
+    .d_tp_header > .d_tp_sub_header > .icons > div:nth-child(2) {
+        display: inline-block;
+    }
+
+    .d_tp_banner .home-slider .slide .content h3{
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .contact .row form .inputBox input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="web design">
+  <meta name="author" content="Dhairya Bhavsar">
+  <meta name="keyword" content="food ordering tp cafe.">
+
+  <title>Contact</title>
+
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!--Header Section start-->
+<header class="d_tp_header">
+  <div class="d_tp_sub_header">
+    <a href="#" class="logo"><i class="fas fa-utensils"></i> Dhairya</a>
+
+    <form class="search-form">
+      <input type="text" placeholder="search here...." id="search-box">
+      <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="cart-btn" class="fas fa-shopping-cart" title="Order Cart"></div>
+      <div id="notification-btn" class="fas fa-bell" title="Notification"></div>
+      <div id="login-btn" class="fas fa-user"></div>
+    </div>
+  </div>
+
+  <div class="d_tp_mobile_header">
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="order.html">My Order</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact US</a>
+      <a href="#">Terms & Conditions</a>
+    </nav>
+  </div>
+
+  <!--shopping Cart List start-->
+  <div class="shopping-cart">
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="assets/images/cart-1.jpg" alt="">
+      <div class="content">
+        <h3>organic food</h3>
+        <span class="quantity">1</span>
+        <span class="multiply">x</span>
+        <span class="price">&#x20B9;18.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="assets/images/cart-2.jpg" alt="">
+      <div class="content">
+        <h3>organic food</h3>
+        <span class="quantity">1</span>
+        <span class="multiply">x</span>
+        <span class="price">&#x20B9;18.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="assets/images/cart-3.jpg" alt="">
+      <div class="content">
+        <h3>organic food</h3>
+        <span class="quantity">1</span>
+        <span class="multiply">x</span>
+        <span class="price">&#x20B9;18.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="assets/images/cart-3.jpg" alt="">
+      <div class="content">
+        <h3>organic food</h3>
+        <span class="quantity">1</span>
+        <span class="multiply">x</span>
+        <span class="price">&#x20B9;18.99</span>
+      </div>
+    </div>
+    <div class="box">
+      <i class="fas fa-times"></i>
+      <img src="assets/images/cart-3.jpg" alt="">
+      <div class="content">
+        <h3>organic food</h3>
+        <span class="quantity">1</span>
+        <span class="multiply">x</span>
+        <span class="price">&#x20B9;18.99</span>
+      </div>
+    </div>
+    <h3 class="total"> total : <span>56.97</span> </h3>
+    <a href="#" class="btn">checkout cart</a>
+  </div>
+  <!--shopping cart list end-->
+
+  <!--Notification List Box start-->
+  <div class="notification">
+    <div class="notification-box">
+      <p>
+        New Order from the user_312
+      </p>
+      <p>
+        Order completed from the user_3
+      </p>
+      <p>
+        Order rejected
+      </p>
+    </div>
+  </div>
+  <!--Notification list box end-->
+</header>
+<!--Header Section end-->
+
+<!--Bottom Nav b-ar start-->
+<nav class="d_tp_mobile_sub_header">
+  <a href="index.html" class="fas fa-home" title="home"></a>
+  <a href="order.html" class="fas fa-clipboard-list" title="my order"></a>
+  <!--    <a href="#" class="fas fa-info" title="about-us"></a>-->
+  <!--    <a href="#" class="fas fa-phone" title="contact-us"></a>-->
+  <a href="#" id="cart-mobile-btn" class="fas fa-shopping-cart" title="Order Cart"></a>
+  <a href="#" id="mobile-notification-btn" class="fas fa-bell" title="Notification"></a>
+  <a href="#" id="mobile-login-btn" class="fas fa-user"></a>
+</nav>
+<!--Bottom nav bar end-->
+
+<!-- Login form  start-->
+<div class="login-form-container">
+  <div id="close-login-btn" class="fas fa-times"></div>
+  <div class="non-valid">
+    <form >
+      <h3>sign in</h3>
+      <label for="mobileNumber">Mobile Number</label>
+      <input type="text" required name="mobileNumber" class="box" placeholder="Enter Mobile Number" id="mobileNumber">
+
+      <input type="button" value="Validate" id="otp-send" class="btn">
+    </form>
+  </div>
+  <div class="valid hide">
+    <form action="">
+      <h3>Verification</h3>
+      <span>Your verification code is sent on +91 7405183836</span><br/>
+      <span>Enter the code in <span class="counter">0:30 sec</span></span>
+      <div class="otp-input">
+        <input type="text" class="box" required>
+        <input type="text" class="box" required>
+        <input type="text" class="box" required>
+        <input type="text" class="box" required>
+        <input type="text" class="box" required>
+        <input type="text" class="box" required>
+      </div>
+
+      <input type="submit" value="Verify" class="btn">
+      <small>Didn't Receive The Verification OTP? <a href="#">Resend Again</a></small>
+    </form>
+  </div>
+</div>
+<!-- Login form  end-->
+
+<!--contact Section start-->
+<section class="contact">
+  <div class="icons-container">
+    <div class="icons">
+      <i class="fas fa-phone"></i>
+      <h3>Our Number</h3>
+      <p>+123-456-7890</p>
+      <p>+111-222-3333</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-envelope"></i>
+      <h3>Our Email</h3>
+      <p>dhairya.bhavsar@gmail.com</p>
+      <p>dhiarya@gmail.com</p>
+    </div>
+
+    <div class="icons">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>Our Address</h3>
+      <p>Ahmedabad, India - 380008</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <form action="">
+      <h3>Get In Touch</h3>
+      <div class="inputBox">
+        <input type="text" placeholder="enter your name" class="box">
+        <input type="email" placeholder="enter your email" class="box">
+      </div>
+      <div class="inputBox">
+        <input type="number" placeholder="enter your number" class="box">
+        <input type="text" placeholder="enter your subject" class="box">
+      </div>
+      <textarea placeholder="your message" cols="30" rows="10"></textarea>
+      <input type="submit" value="send message" class="btn">
+    </form>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4780006441224!2d72.5989986649189!3d23.006215134961444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85c51048cefb%3A0x777f51782a8b7a1a!2sKankaria%20Lake!5e0!3m2!1sen!2sin!4v1637167397728!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+<!--contact Section end-->
+
+<!--Footer section start-->
+<section class="d_tp_footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>our locations</h3>
+      <a href="#"> <i class="fas fa-map-marker-alt"></i> india </a>
+      <a href="#"> <i class="fas fa-map-marker-alt"></i> USA </a>
+    </div>
+
+    <div class="box payment-methods">
+      <h3>Payments Methods</h3>
+      <a href="#"> <img src="assets/images/google-pay.png" alt="gpay"></a>
+      <a href="#"> <img src="assets/images/paytm.png" alt="paytm"></a>
+      <a href="#"> <img src="assets/images/visa.png" alt="visa"></a>
+      <a href="#"> <img src="assets/images/master-card.png" alt="master-card"></a>
+    </div>
+
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+      <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+      <a href="#"> <i class="fas fa-envelope"></i> shaikhanas@gmail.com </a>
+    </div>
+
+    <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+      <a href="#" class="fab fa-pinterest"></a>
+    </div>
+  </div>
+
+  <div class="credit"> Copyrights all rights reserved </div>
+</section>
+<!--Footer section end-->
+
+<!-- custom css file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html></title>
+</head>
+<body>
+
+</body>
+</html>
